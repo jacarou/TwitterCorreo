@@ -46,8 +46,8 @@ public class TwitterCorreo {
         
         
         Session sesion = Session.getDefaultInstance(propiedad);
-        String correoEnvia = "POP2020.UD@gmail.com";
-        String contrasena = "20191020055";
+        String correoEnvia = "*******";
+        String contrasena = "*******";
         String receptor = "cristianthrashx@gmail.com";
         String asunto = "POP Jhony Caro Cod 20191020055";
         String mensaje=this.TextTwit;
@@ -69,10 +69,10 @@ public class TwitterCorreo {
     public void Extraer()throws TwitterException {
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-            .setOAuthConsumerKey("4FveE80b5uh31CzbyEjHA93Qi")
-            .setOAuthConsumerSecret("Dthc6kmMeanX3P0V6s5uvMN141G96ysUhix2QLfT3E10FlwaLv")
-            .setOAuthAccessToken("1563786535-18npWUpHJ74xLwWL8ev36lHgBqh33tryFa4pBVs")
-            .setOAuthAccessTokenSecret("Ls14DbwdbGMAFBi1TXGpyIVYYfSjyG7iZDfl4rmVkkOaz");
+            .setOAuthConsumerKey("**************")
+            .setOAuthConsumerSecret("**************")
+            .setOAuthAccessToken("**************")
+            .setOAuthAccessTokenSecret("**************");
 	TwitterFactory tf = new TwitterFactory(cb.build());
 	Twitter twitter = tf.getInstance();
 
